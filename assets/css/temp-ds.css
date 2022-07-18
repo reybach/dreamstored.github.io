@@ -550,11 +550,16 @@ header
     float: none!important;
   }
   .header-area {
-    background-color: #f7f7f7;
+    background-color: transparent;
     padding: 0px 15px;
     height: 80px;
     box-shadow: none;
-    text-align: center;
+    
+  }.background-header {
+    background-color: #FFF;
+    padding: 0px 15px;
+    height: 80px;
+    box-shadow: none;
   }
   .header-area .container {
     padding: 0px;
@@ -590,15 +595,16 @@ header
     padding-right: 0px !important;
   }
   .header-area .main-nav .nav li a {
+    width: 100%!important;
     height: 50px !important;
-    line-height: 50px !important;
     padding: 0px !important;
     border: none !important;
-    background: #f7f7f7 !important;
+    background: #Ffff !important;
     color: #191a20 !important;
   }
   .header-area .main-nav .nav li a:hover {
-    background: #eee !important;
+    width: 100%!important;
+    background: #fff0f4 !important;
     color: #FDA4BD!important;
   }
   .header-area .main-nav .nav li.submenu ul {
@@ -698,7 +704,7 @@ color: #000000;
     margin-top: 50%;
   }
   .hero-area .header-text {
-    width: 50%;
+    width: 60%;
     margin-left: 5%;
   }
 }
