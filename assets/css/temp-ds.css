@@ -661,6 +661,7 @@ hero
   background-image: url(../images/1.svg);
   background-repeat: no-repeat;
   background-position: right top;
+  margin-bottom: 40px;
 }
 
 .hero-area .header-text .left-text {
@@ -747,7 +748,7 @@ about
 */
 
 #about {
-  padding: 100px 0px;
+  padding: 0px 0px;
   position: relative;
   z-index: 9;
 }
@@ -808,7 +809,7 @@ promotion
   position: absolute;
   width: 100%;
   display: inline-block;
-  height: 200%;
+  height: 155%;
   margin-top: -200px;
 }
 
@@ -858,6 +859,175 @@ promotion
   }
   
 }
+/*
+---------------------------------------------
+PORTOFOLIO
+---------------------------------------------
+*/
+.gallery{
+	width: 100%;
+	display: block;
+	min-height: 100vh;
+	padding: 0;
+}
+.gallery .gallery-filter{
+	padding: 0 15px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+  background: #FEE4EB;
+  border-radius: 10px;
+  overflow: auto;
+  white-space: nowrap;
+  
+}
+.gallery .gallery-filter .filter-item{
+
+  color: #ffffff;
+  background-color: #FDA4BD;
+	font-size: 14px;
+  font-weight: 600;
+	text-transform: uppercase;
+	display: inline-block;
+  border-radius: 10px;
+  margin:10px 8px;
+	cursor: pointer;
+  padding: 8px 20px 8px 20px;
+	line-height: 1.2;
+	transition: all 0.3s ease;
+}
+.gallery .gallery-filter .filter-item.active{
+	color: white;
+	border-color : #F24A91;
+  background: #F24A91;
+}
+.gallery .gallery-item{
+	width: calc(100% / 3);
+	padding: 15px;
+  list-style: none;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0px;
+  padding: 0px;
+
+}
+.gallery .gallery-item-inner img{
+	width: 100%;
+  border: 3px solid #FEE4EB;
+  border-radius: 10px;
+}
+.gallery .gallery-item.show{
+	animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.gallery .gallery-item.hide{
+	display: none;
+}
+
+/*responsive*/
+@media(max-width: 491px){
+	.gallery .gallery-item{
+		width: 50%;
+	}
+}
+@media(max-width: 467px){
+    .gallery .gallery-item{
+		width: 100%;
+	}
+	.gallery .gallery-filter .filter-item{
+		margin-bottom: 10px;
+	}
+}
+/*
+---------------------------------------------
+Cara Pemesanan 
+---------------------------------------------
+*/
+.pemesanan{
+  width: 100%;
+  height: fit-content;
+  background: #FEE4EB;
+  margin-top: 100px;
+}
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.pricing .plan {
+  background-color: #fff;
+  padding: 2.5rem;
+  margin: 12px;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+.pricing .plan h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+.pricing .plan .price {
+  margin-bottom: 1rem;
+  font-size: 30px;
+}
+.pricing .plan ul.features {
+  list-style-type: none;
+  text-align: left;
+}
+.pricing .plan ul.features li {
+  margin: 8px;
+}
+.pricing .plan ul.features li .fas {
+  margin-right: 4px;
+}
+.pricing .plan ul.features li .fa-check-circle {
+  color: #6ab04c;
+}
+.pricing .plan ul.features li .fa-times-circle {
+  color: #FDA4BD;
+}
+.pricing .plan button {
+  border: none;
+  width: 100%;
+  padding: 12px 35px;
+  margin-top: 1rem;
+  background-color: #FDA4BD;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.pricing .plan.popular {
+  border: 2px solid #6ab04c;
+  position: relative;
+  transform: scale(1.08);
+}
+.pricing .plan.popular span {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #6ab04c;
+  color: #fff;
+  padding: 4px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.pricing .plan:hover {
+  box-shadow: 5px 7px 67px -28px rgba(0, 0, 0, 0.37);
+}
+
 /*
 --------------------------------------------
 testimonials
