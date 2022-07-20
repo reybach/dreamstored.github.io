@@ -674,8 +674,8 @@ hero
 .hero-area .header-text h1 {
 font-family: 'Poppins';
 font-style: normal;
-font-weight: 600;
-font-size: 38px;
+font-weight: 700;
+font-size: 42px;
 
 color: #000000;
 }
@@ -867,7 +867,6 @@ PORTOFOLIO
 .gallery{
 	width: 100%;
 	display: block;
-	min-height: 100vh;
 	padding: 0;
 }
 .gallery .gallery-filter{
@@ -953,25 +952,84 @@ Cara Pemesanan
 .pemesanan{
   width: 100%;
   height: fit-content;
-  background: #FEE4EB;
+  background: #FDA4BD;
+  margin-top: 100px;
+}
+.card {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  background: #FDA4BD;
+  border: #FDA4BD;
+}
+.card img {
+ 
+  width: 90px;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.card .card-title {
+  font-weight: 700;
+  font-size: 15;
+  margin-top: 10px;
+  color: #FFF;
+}
+
+/*
+---------------------------------------------
+Harga Jasa
+---------------------------------------------
+*/
+.harjasa{
+  width: 100%;
+  height: fit-content;
+  background: #fff;
   margin-top: 100px;
 }
 .pricing {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 
 }
 .pricing .plan {
   background-color: #fff;
   padding: 2.5rem;
   margin: 12px;
-  border-radius: 5px;
+  background: #FFFFFF;
+box-shadow: 1px 1px 10px 1px #E5E5E5;
+border-radius: 10px;
   text-align: center;
   transition: 0.3s;
   cursor: pointer;
 }
 
+.pricing-desc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+
+}
+.pricing-desc .plan-desc {
+  background-color: #fff;
+  padding: 15px;
+  margin: 12px;
+  border-radius: 5px;
+  text-align: center;
+
+  
+}
+.pricing-desc .plan-desc i{
+  color: #FDA4BD;
+  font-size: 50px;
+  padding: 15px;
+}
+.pricing-desc .plan-desc .text{
+  text-align: left;
+  margin-left: 5px;
+}
 
 .pricing .plan h2 {
   font-size: 22px;
